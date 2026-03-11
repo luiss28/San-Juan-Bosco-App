@@ -4,16 +4,16 @@
 
 .Header {
   border-bottom: 1px solid #ddd;
+  background-color: bisque;
 }
 
 .Sidebar {
   width: 300px;
   padding: 5px;
   position: sticky;
-  top: 62px;
+  top: 90px;
   align-self: flex-start;
   align-items: start;
-
 }
 
 .Sidebar .nav-item {
@@ -38,10 +38,14 @@
 }
 
 .Sidebar .nav-item .active {
-  background-color: #def;
+  background-color: rgb(253, 230, 204);
 }
 
 .InputField {
   margin-top: 15px;
   margin-bottom: 15px;
+}
+
+.Body {
+  margin-top: 10px;
 }

@@ -1,8 +1,8 @@
 import { BrowserRouter, Routes, Route, Navigate } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Header from './components/Header';
-import FeedPage from './pages/FeedPage';
-import ExplorePage from './pages/ExplorePage';
+import WelcomePage from './pages/WelcomePage';
+import RosarioPage from './pages/RosarioPage';
 import UserPage from './pages/UserPage';
 
 import { useState, useEffect } from 'react'
@@ -27,8 +27,8 @@ function App() {
       <BrowserRouter>
         <Header />
         <Routes>
-          <Route path="/" element = {<FeedPage />} />
-          <Route path="/explore" element = {<ExplorePage />} />
+          <Route path="/" element = {<WelcomePage />} />
+          <Route path="/rosario" element = {<RosarioPage />} />
           <Route path="/user/:username" element={<UserPage />} />
           <Route path="*" element = {<Navigate />} />
         </Routes>
