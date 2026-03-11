@@ -23,6 +23,7 @@
 
 .Sidebar .nav-link {
   padding: 5px;
+  font-size:1.2rem;
 }
 
 .Sidebar a {
@@ -48,4 +49,15 @@
 
 .Body {
   margin-top: 10px;
+}
+
+.bisque-btn {
+  background-color: bisque;
+  border: none;
+  color: black;
+}
+
+.bisque-btn:hover {
+  background-color: #e4b774;
+  color: black;
 }

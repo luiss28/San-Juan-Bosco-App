@@ -5,15 +5,20 @@ import { NavLink } from 'react-router-dom';
 export default function Sidebar() {
   return (
     <Navbar sticky="top" className="flex-column Sidebar">
-      <Nav.Item>
-        <Nav.Link as={NavLink} to="/rosario" end>Rezar el Rosario</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link as={NavLink} to="/rosariojuvenil">Rosario Juvenil</Nav.Link>
-      </Nav.Item>
-      <Nav.Item>
-        <Nav.Link as={NavLink} to="/donbosco">Quien fue Don Bosco?</Nav.Link>
-      </Nav.Item>
+      <Nav variant="pills" className="flex-column">
+        <Nav.Item>
+          <Nav.Link as={NavLink} to="/" end>Menu de Bienvenida</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as={NavLink} to="/rosario" end>Rezar el Rosario</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as={NavLink} to="/rosariojuvenil">Rosario Juvenil</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as={NavLink} to="/donbosco">Quien fue Don Bosco?</Nav.Link>
+        </Nav.Item>
+      </Nav>
     </Navbar>
   );
 }

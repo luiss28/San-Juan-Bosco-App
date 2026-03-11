@@ -1,7 +1,7 @@
 import Body from '../components/Body';
 import Suplica from '../components/Suplicas';
 
-export default function UserPage() {
+export default function RosarioJuvenilPage() {
 
     return (
         <Body sidebar>
