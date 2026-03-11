@@ -4,18 +4,19 @@ import Misterio from '../components/Oraciones';
 export default function RosarioPage() {
   return (
     <Body sidebar>
-      <h1>Como Rezar el Rosario</h1>
-      <h3>Inicio:</h3>
-      <p>
+      <h1 style={{textAlign:"center"}}>Como Rezar el Rosario</h1>
+      <h3 style={{textAlign:"center"}}>Inicio:</h3>
+      <p style={{textAlign:"center"}}>
         Por la senal de la santa cruz<br/>
         De nuestros enemigos...<br/>
         En el nombre del padre, hijo, y espiritu santo<br/>
         Amen.
       </p>
-      <h5>Rezar Credo:</h5>
-      <p>
+      <h5 style={{textAlign:"center"}}>Rezar Credo:</h5>
+      <p style={{textAlign:"center"}}>
         Creo en...
       </p>
+      <hr/>
       <h3>Primer Misterio:</h3>
       <h5>Mon-Tue-Wed-Thurs-Fri-Sat-Sun</h5>
       <Misterio/>

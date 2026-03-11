@@ -3,7 +3,7 @@ import Container from 'react-bootstrap/Container';
 import Header from './components/Header';
 import WelcomePage from './pages/WelcomePage';
 import RosarioPage from './pages/RosarioPage';
-import UserPage from './pages/UserPage';
+import RosarioJuvenil from './pages/RosarioJuvenil';
 
 import { useState, useEffect } from 'react'
 
@@ -29,7 +29,7 @@ function App() {
         <Routes>
           <Route path="/" element = {<WelcomePage />} />
           <Route path="/rosario" element = {<RosarioPage />} />
-          <Route path="/user/:username" element={<UserPage />} />
+          <Route path="/rosariojuvenil" element={<RosarioJuvenil />} />
           <Route path="*" element = {<Navigate />} />
         </Routes>
       </BrowserRouter>
