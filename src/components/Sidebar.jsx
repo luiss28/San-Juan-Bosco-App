@@ -6,10 +6,13 @@ export default function Sidebar() {
   return (
     <Navbar sticky="top" className="flex-column Sidebar">
       <Nav.Item>
-        <Nav.Link as={NavLink} to="/" end>Feed</Nav.Link>
+        <Nav.Link as={NavLink} to="/rosario" end>Rezar el Rosario</Nav.Link>
       </Nav.Item>
       <Nav.Item>
-        <Nav.Link as={NavLink} to="/explore">Explore</Nav.Link>
+        <Nav.Link as={NavLink} to="/rosariojuvenil">Rosario Juvenil</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
+        <Nav.Link as={NavLink} to="/donbosco">Quien fue Don Bosco?</Nav.Link>
       </Nav.Item>
     </Navbar>
   );

@@ -3,9 +3,14 @@ import Container from 'react-bootstrap/Container';
 
 export default function Header() {
   return (
-    <Navbar bg="light" sticky="top" className="Header">
+    <Navbar sticky="top" className="Header">
       <Container>
-        <Navbar.Brand>San Juan Bosco</Navbar.Brand>
+        <Navbar.Brand>
+          San Juan Bosco Grupo Juvenil
+          <div className="text-muted fs-6">
+            Parroquia San Jose y San Esteban
+          </div>
+        </Navbar.Brand>
       </Container>
     </Navbar>
   );

@@ -7,16 +7,22 @@
 }
 
 .Sidebar {
-  width: 120px;
-  margin: 5px;
+  width: 300px;
+  padding: 5px;
   position: sticky;
   top: 62px;
   align-self: flex-start;
   align-items: start;
+
 }
 
 .Sidebar .nav-item {
   width: 100%;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.Sidebar .nav-link {
+  padding: 5px;
 }
 
 .Sidebar a {
