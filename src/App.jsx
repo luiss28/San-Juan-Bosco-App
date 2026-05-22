@@ -7,6 +7,8 @@ import RosarioJuvenilPage from './pages/RosarioJuvenilPage';
 import DonBoscoPage from './pages/DonBoscoPage';
 
 import { useState, useEffect } from 'react'
+import RegistrationPage from './pages/RegistrationPage';
+import LoginPage from './pages/LoginPage';
 
 function App() {
   const [users, setUsers] = useState([])
@@ -32,6 +34,8 @@ function App() {
           <Route path="/rosario" element = {<RosarioPage />} />
           <Route path="/rosariojuvenil" element={<RosarioJuvenilPage />} />
           <Route path="/donbosco" element={<DonBoscoPage />} />
+          <Route path="/register" element={<RegistrationPage/>} />
+          <Route path="/login" element={<LoginPage/>} />
           <Route path="*" element = {<Navigate />} />
         </Routes>
       </BrowserRouter>

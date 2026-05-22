@@ -1,0 +1,60 @@
+import { useState, useEffect, useRef } from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Body from '../components/Body';
+import InputField from '../components/InputField';
+
+export default function LoginPage() {
+  const [formErrors, setFormErrors] = useState({});
+  const usernameField = useRef();
+  const passwordField = useRef();
+
+  useEffect(() => {
+    usernameField.current.focus();
+  }, []);
+
+  const onSubmit = async (ev) => {
+    ev.preventDefault();
+    const username = usernameField.current.value;
+    const password = passwordField.current.value;
+
+    const response = await fetch("/login", {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify({
+            username: username,
+            password: password
+        })
+    });
+
+    const data = await response.json();
+
+    if (!response.ok) {
+        setFormErrors({ username: data.message });
+        return;
+    }
+
+    localStorage.setItem("member", JSON.stringify(data.member));
+
+    window.location.href = "/";
+
+    console.log(`You entered ${username}:${password}`);
+  };
+
+  return (
+    <Body>
+      <h1>Login</h1>
+      <Form onSubmit={onSubmit}>
+        <InputField
+          name="username" label="Username"
+          error={formErrors.username} fieldRef={usernameField} />
+        <InputField
+          name="password" label="Password" type="password"
+          error={formErrors.password} fieldRef={passwordField} />
+        <Button variant="primary" type="submit">Login</Button>
+      </Form>
+    </Body>
+  );
+}
