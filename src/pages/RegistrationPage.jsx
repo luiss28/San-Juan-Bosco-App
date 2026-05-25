@@ -8,8 +8,6 @@ export default function RegistrationPage() {
   const [formErrors, setFormErrors] = useState({});
   const usernameField = useRef();
   const emailField = useRef();
-  const passwordField = useRef();
-  const password2Field = useRef();
 
   useEffect(() => {
     usernameField.current.focus();
@@ -20,18 +18,11 @@ export default function RegistrationPage() {
 
     const username = usernameField.current.value;
     const email = emailField.current.value;
-    const password = passwordField.current.value;
-    const password2 = password2Field.current.value;
 
     let errors ={};
 
     if (!username) errors.username = "Username required";
     if (!email) errors.email = "Email required";
-    if (!password) errors.password = "Password required";
-
-    if (password !== password2) {
-        errors.password2 = "Passwords must match";
-    }
 
     if (Object.keys(errors).length > 0) {
         setFormErrors(errors);
@@ -48,7 +39,6 @@ export default function RegistrationPage() {
         body: JSON.stringify({
             username: username,
             email: email,
-            password: password
         })
     });
 
@@ -72,7 +62,7 @@ export default function RegistrationPage() {
   };
 
   return (
-    <Body>
+    <Body sidebar>
       <h1>Register</h1>
       <Form onSubmit={onSubmit}>
         <InputField
@@ -81,12 +71,6 @@ export default function RegistrationPage() {
         <InputField
           name="email" label="Email address"
           error={formErrors.email} fieldRef={emailField} />
-        <InputField
-          name="password" label="Password" type="password"
-          error={formErrors.password} fieldRef={passwordField} />
-        <InputField
-          name="password2" label="Password again" type="password"
-          error={formErrors.password2} fieldRef={password2Field} />
         <Button variant="primary" type="submit">Register</Button>
       </Form>
     </Body>

@@ -20,11 +20,12 @@ export default function Sidebar() {
         <Nav.Item>
           <Nav.Link as={NavLink} to="/donbosco">Quien fue Don Bosco?</Nav.Link>
         </Nav.Item>
-        {member && (
-          <Nav.Item>
-            <Nav.Link as={NavLink} to="/meetings">Ver reuniones</Nav.Link>
-          </Nav.Item>
-        )}
+        <Nav.Item>
+          <Nav.Link as={NavLink} to="/members">Ver miembros</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link as={NavLink} to="/register">Registrate ahora!</Nav.Link>
+        </Nav.Item>
       </Nav>
     </Navbar>
   );
