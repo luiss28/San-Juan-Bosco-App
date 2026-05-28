@@ -18,10 +18,20 @@ function App() {
   }, [])
 
   const fetchMembers = async() => {
-    const response = await fetch("http://127.0.0.1:5000/members")
-    const data = await response.json()
-    setMembers(data.members)
-    console.log(data.members)
+    try {
+      const response = await fetch("/members")
+      if (!response.ok) {
+        console.error('Failed to fetch members', response.status)
+        setMembers([])
+        return
+      }
+      const data = await response.json()
+      setMembers(data.members)
+      console.log(data.members)
+    } catch (err) {
+      console.error('Failed to fetch members', err)
+      setMembers([])
+    }
   }
 
 
@@ -35,7 +45,7 @@ function App() {
           <Route path="/rosariojuvenil" element = {<RosarioJuvenilPage />} />
           <Route path="/donbosco" element = {<DonBoscoPage />} />
           <Route path="/members" element = {<MembersList members={members} />} />
-          <Route path="/register" element = {<RegistrationPage/>} />
+          <Route path="/register" element = {<RegistrationPage updateCallback={fetchMembers} />} />
           <Route path="/login" element = {<LoginPage/>} />
           <Route path="*" element = {<Navigate />} />
         </Routes>
