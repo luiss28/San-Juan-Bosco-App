@@ -61,3 +61,16 @@
   background-color: #e4b774;
   color: black;
 }
+
+.not-found-button {
+  background-color: #e4b774;
+  border-color: #e4b774;
+  color: black;
+}
+
+.not-found-button:hover,
+.not-found-button:focus {
+  background-color: bisque;
+  border-color: bisque;
+  color: black;
+}
