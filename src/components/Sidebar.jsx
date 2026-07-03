@@ -3,7 +3,6 @@ import Nav from "react-bootstrap/Nav";
 import { NavLink } from 'react-router-dom';
 
 export default function Sidebar() {
-  const member = JSON.parse(localStorage.getItem("member"));
 
   return (
     <Navbar sticky="top" className="flex-column Sidebar">
@@ -19,9 +18,6 @@ export default function Sidebar() {
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={NavLink} to="/donbosco">Quien fue Don Bosco?</Nav.Link>
-        </Nav.Item>
-        <Nav.Item>
-          <Nav.Link as={NavLink} to="/members">Ver miembros</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link as={NavLink} to="/register">Formulario de interes</Nav.Link>
