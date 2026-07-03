@@ -5,8 +5,7 @@ import WelcomePage from './pages/WelcomePage';
 import RosarioPage from './pages/RosarioPage';
 import RosarioJuvenilPage from './pages/RosarioJuvenilPage';
 import DonBoscoPage from './pages/DonBoscoPage';
-import RegistrationPage from './pages/RegistrationPage';
-import LoginPage from './pages/LoginPage';
+import InterestFormPage from './pages/InterestFormPage';
 
 function App() {
   
@@ -19,8 +18,7 @@ function App() {
           <Route path="/rosario" element = {<RosarioPage />} />
           <Route path="/rosariojuvenil" element = {<RosarioJuvenilPage />} />
           <Route path="/donbosco" element = {<DonBoscoPage />} />
-          <Route path="/register" element = {<RegistrationPage />} />
-          <Route path="/login" element = {<LoginPage/>} />
+          <Route path="/interes" element = {<InterestFormPage />} />
           <Route path="*" element = {<Navigate />} />
         </Routes>
       </BrowserRouter>
