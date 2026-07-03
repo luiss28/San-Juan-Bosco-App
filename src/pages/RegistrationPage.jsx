@@ -7,7 +7,7 @@ const MemberForm = ({ existingMember = {}, updateCallback = () => {} }) => {
     const [email, setEmail] = useState(existingMember.email || "");
 
     const updating = Object.entries(existingMember).length !== 0
-
+    // skeleton complete. working on making app useful now.
     const onSubmit = async (e) => {
         e.preventDefault();
 
