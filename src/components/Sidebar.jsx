@@ -24,7 +24,7 @@ export default function Sidebar() {
           <Nav.Link as={NavLink} to="/members">Ver miembros</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={NavLink} to="/register">Registrate ahora!</Nav.Link>
+          <Nav.Link as={NavLink} to="/register">Formulario de interes</Nav.Link>
         </Nav.Item>
       </Nav>
     </Navbar>

@@ -44,7 +44,7 @@ const MemberForm = ({ existingMember = {}, updateCallback = () => {} }) => {
     return (
       <Body sidebar>
         <form onSubmit={onSubmit}>
-            <div>
+            {/* <div>
                 <label htmlFor="firstName">First Name:</label>
                 <input
                     type="text"
@@ -71,7 +71,16 @@ const MemberForm = ({ existingMember = {}, updateCallback = () => {} }) => {
                     onChange={(e) => setEmail(e.target.value)}
                 />
             </div>
-            <button type="submit">{updating ? "Update" : "Create"}</button>
+            <button type="submit">{updating ? "Update" : "Create"}</button> */}
+            <div>
+                <iframe 
+                    src="https://docs.google.com/forms/d/e/1FAIpQLSeHelAnJf4XkPwm8-D63LQlR0NQq7eUxn1_zDYkWb8ddStW1g/viewform?embedded=true" 
+                    width="1000" 
+                    height="1000" 
+                    frameborder="0" 
+                    marginheight="50" 
+                    marginwidth="0">Loading…</iframe>
+            </div>
         </form>
       </Body>
     );
