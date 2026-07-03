@@ -5,7 +5,7 @@ export default function InterestFormPage() {
     return (
         <Body sidebar>
             <div>
-                <iframe 
+                <iframe title="interest form"
                     src="https://docs.google.com/forms/d/e/1FAIpQLSeHelAnJf4XkPwm8-D63LQlR0NQq7eUxn1_zDYkWb8ddStW1g/viewform?embedded=true" 
                     width="1000" 
                     height="1000" 

@@ -17,10 +17,10 @@ export default function Sidebar() {
           <Nav.Link as={NavLink} to="/rosariojuvenil">Rosario Juvenil</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={NavLink} to="/donbosco">Quien fue Don Bosco?</Nav.Link>
+          <Nav.Link as={NavLink} to="/donbosco">¿Quien fue Don Bosco?</Nav.Link>
         </Nav.Item>
         <Nav.Item>
-          <Nav.Link as={NavLink} to="/interes">Formulario de interes</Nav.Link>
+          <Nav.Link as={NavLink} to="/interes">Formulario de Interes</Nav.Link>
         </Nav.Item>
       </Nav>
     </Navbar>
