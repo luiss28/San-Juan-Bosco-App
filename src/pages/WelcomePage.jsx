@@ -13,15 +13,22 @@ export default function WelcomePage() {
       <br/>
 
       <Card className="mb-2">
-        <Card.Body>
-          <Card.Title>Aprende...</Card.Title>
-          <Card.Subtitle className="mb-2 text-muted">
-            como rezar el rosario
-          </Card.Subtitle>
-          <Card.Text>
-            Paso por paso. No te preocupes. Este es el guia.
-          </Card.Text>
-          <Button className="bisque-btn" onClick={() => navigate("/rosario")}>Aprende ahora</Button>
+        <Card.Body style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <img
+            src="/YG_Person_Praying.jpg"
+            alt="Persona orando"
+            style={{ width: '220px', height: '180px', objectFit: 'cover', flexShrink: 0, borderRadius: '8px' }}
+          />
+          <div style={{ flex: 1 }}>
+            <Card.Title>Aprende...</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">
+              como rezar el rosario
+            </Card.Subtitle>
+            <Card.Text>
+              Paso por paso. No te preocupes. Este es el guia.
+            </Card.Text>
+            <Button className="bisque-btn" onClick={() => navigate("/rosario")}>Aprende ahora</Button>
+          </div>
         </Card.Body>
       </Card>
 
