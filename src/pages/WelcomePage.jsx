@@ -41,7 +41,7 @@ export default function WelcomePage() {
         <Card.Body style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <img
             src="/MFS_Logo.jpeg"
-            alt="Persona orando"
+            alt="Mision Haz Me Santo"
             style={{ width: '220px', height: '180px', objectFit: 'cover', flexShrink: 0, borderRadius: '8px' }}
           />
           <div style={{ flex: 1 }}>
@@ -61,7 +61,7 @@ export default function WelcomePage() {
         <Card.Body style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
           <img
             src="/SJB_Portrait.jpg"
-            alt="Persona orando"
+            alt="San Juan Bosco"
             style={{ width: '220px', height: '180px', objectFit: 'cover', flexShrink: 0, borderRadius: '8px' }}
           />
           <div style={{ flex: 1 }}>
@@ -77,6 +77,25 @@ export default function WelcomePage() {
         </Card.Body>
       </Card>
 
+      <Card className="mb-2">
+        <Card.Body style={{ display: 'flex', alignItems: 'center', gap: '16px' }}>
+          <img
+            src="/YG_Funny.jpeg"
+            alt="Riendo juntos"
+            style={{ width: '220px', height: '180px', objectFit: 'cover', flexShrink: 0, borderRadius: '8px' }}
+          />
+          <div style={{ flex: 1 }}>
+            <Card.Title>¿Quieres unirte?</Card.Title>
+            <Card.Subtitle className="mb-2 text-muted">
+              ¡llena el formulario!
+            </Card.Subtitle>
+            <Card.Text>
+              Estaremos en contacto contigo con más información
+            </Card.Text>
+            <Button className="bisque-btn" onClick={() => navigate("/interes")}>¡Quiero unirme!</Button>
+          </div>
+        </Card.Body>
+      </Card>
 
     </Body>
   );

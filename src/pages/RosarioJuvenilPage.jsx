@@ -8,6 +8,11 @@ export default function RosarioJuvenilPage() {
 
     return (
         <Body sidebar>
+            <img
+                src="/MFS_Together.jpeg"
+                alt="Mision Haz Me Santo"
+                style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '12px', display: 'block', margin: '0 auto 16px' }}
+            />
             <h1 style={{textAlign:"center"}}>Como Rezar el Rosario Juvenil</h1>
             <h3 style={{textAlign:"center"}}>Inicio:</h3>
             <h5 style={{textAlign:"center"}}>Rezar Credo:</h5>

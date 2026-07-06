@@ -7,6 +7,24 @@ import Gloria from '../components/Gloria';
 export default function RosarioPage() {
   return (
     <Body sidebar>
+      <div style={{ display: 'flex', gap: '5px', marginBottom: '16px', alignItems: 'stretch' }}>
+        <img
+          src="/Rosary.png"
+          alt="Rezando el rosario"
+          style={{ flex: '1 1 0', width: '0', maxWidth: '100%', height: 'auto', objectFit: 'cover', borderRadius: '12px', display: 'block' }}
+        />
+        <img
+          src="/YG_w_Mary.jpg"
+          alt="Rezando el rosario"
+          style={{ flex: '1 1 0', width: '0', maxWidth: '100%', height: 'auto', objectFit: 'cover', borderRadius: '12px', display: 'block' }}
+        />
+        <img
+          src="/Cece_Praying.jpeg"
+          alt="Rezando el rosario"
+          style={{ flex: '1 1 0', width: '0', maxWidth: '100%', height: 'auto', objectFit: 'cover', borderRadius: '12px', display: 'block' }}
+        />
+      </div>
+
       <h1 style={{textAlign:"center"}}>Como Rezar el Rosario</h1>
       <h3 style={{textAlign:"center"}}>Inicio:</h3>
       <p style={{textAlign:"center"}}>
