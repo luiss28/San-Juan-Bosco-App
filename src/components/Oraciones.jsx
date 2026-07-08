@@ -53,7 +53,7 @@ export default function Misterio({num}) {
         <Body>
             <Card>
                 <Card.Header>
-                    <Tabs accessKey={activeTab} onSelect={(k) => setActiveTab(k)}>
+                    <Tabs activeKey={activeTab} onSelect={(k) => setActiveTab(k)}>
                         <Tab eventKey="Gozosos" title="Lunes/Sabado"/>
                         <Tab eventKey="Dolorosos" title="Martes/Viernes"/>
                         <Tab eventKey="Gloriosos" title="Miercoles/Domingo"/>
@@ -80,13 +80,25 @@ export default function Misterio({num}) {
             <b>Gloria</b>
             <Gloria/>
             <br/>
+            <b>Maria es madre de gracia</b>
+            <div style={{ marginLeft: '24px' }}>
+                <p>
+                    Maria es madre de gracia, madre de misericordia.
+                    En la vida y en la muerta amparanos gran señora.
+                    No te olvides de nosotros en aquella ultima hora 
+                    virgen santisima.
+                </p>
+            </div>
             <b>Oh Jesus mio</b>
-            <p>¡Oh, Jesús mío, perdona nuestros pecados, 
-                líbranos del fuego del infierno, lleva al cielo a todas las almas 
-                y socorre espelcialmente a las más necesitadas de tu 
-                Divina Misericordia. 
-                Amén.
-            </p>
+            <div style={{ marginLeft: '24px' }}>
+                <p>
+                    Oh, Jesús mío, perdona nuestros pecados, 
+                    líbranos del fuego del infierno, lleva al cielo a todas las almas 
+                    y socorre espelcialmente a las más necesitadas de tu 
+                    Divina Misericordia. 
+                    Amén.
+                </p>
+            </div>
             <p>
                 Maria concebida sin pecado, 
                 <b> ruega por nosotros que recurrimos a ti.</b>

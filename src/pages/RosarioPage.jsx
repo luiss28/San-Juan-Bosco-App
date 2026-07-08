@@ -87,7 +87,7 @@ export default function RosarioPage() {
         Nuestro Señor Jesucristo.
         Amen.
       </p>
-
+      <br/>
 
     </Body>
   );
