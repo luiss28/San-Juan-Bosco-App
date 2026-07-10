@@ -1,6 +1,7 @@
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 import Container from 'react-bootstrap/Container';
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
 import WelcomePage from './pages/WelcomePage';
 import RosarioPage from './pages/RosarioPage';
 import RosarioJuvenilPage from './pages/RosarioJuvenilPage';
@@ -14,6 +15,7 @@ function App() {
     <Container fluid className="App">
       <BrowserRouter>
         <Header />
+        <ScrollToTop />
         <Routes>
           <Route path="/" element = {<WelcomePage />} />
           <Route path="/rosario" element = {<RosarioPage />} />
