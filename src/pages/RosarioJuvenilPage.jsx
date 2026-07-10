@@ -56,6 +56,7 @@ export default function RosarioJuvenilPage() {
             </h6>
             <Suplica/>
             <br/>
+
             <h3>Segunda Suplica:</h3>
             <h6>
                 Señor, Dios mio, Padre nuestro, creador del cielo y de la
@@ -75,6 +76,7 @@ export default function RosarioJuvenilPage() {
             </h6>
             <Suplica/>
             <br/>
+
             <h3>Tercera Suplica:</h3>
             <h6>
                 Señor, Dios mio, Padre nuestro, creador del cielo y de la
@@ -93,6 +95,7 @@ export default function RosarioJuvenilPage() {
             </h6>
             <Suplica/>
             <br/>
+
             <h3>Cuarta Suplica:</h3>
             <h6>
                 Señor, Dios mio, Padre nuestro, creador del cielo y de la
@@ -114,6 +117,7 @@ export default function RosarioJuvenilPage() {
             </h6>
             <Suplica/>
             <br/>
+
             <h3>Quinta Suplica:</h3>
             <h6>
                 Señor, Dios mio, Padre nuestro, creador del cielo y de la
@@ -130,6 +134,40 @@ export default function RosarioJuvenilPage() {
             </h6>
             <Suplica/>
             <hr/>
+
+            <h5 style={{textAlign:"center"}}>Oración final:</h5>
+            <p style={{textAlign:"center"}}>
+                Rey de reyes, señor nuestro Jesucristo, a Ti consagro mi juventud y mi familia,
+                antes de que lleguen los dias tristes y me impidan alcanzar la vida eterna.
+                Somos tu ejercito, mi fortaleza esta en ti, Jesus.
+
+                Oh Dios de amor, dame capacidad, santificame, hazme valiente, y que tu
+                salvación alcance y me proteja, pues de la carne es la batalla, pero del espiritu
+                es la victoria.
+
+                Yo creo que todos aquellos que aman tu nombre viviran para siempre. <br/> 
+                <b>
+                    Es Dios quien libera,
+                    Es Dios quien rescata,
+                    Es Dios quien cura,
+                    Salva, Señor, mi juventud y mi familia por siempre.
+                    Amen. (3x)
+                </b>
+            </p>
+
+            <h5 style={{textAlign:"center"}}>Salve Reina:</h5>
+            <p style={{textAlign:"center"}}>
+                Dios te salve, Reina y Madre de misericordia,
+                vida, dulzura y esperanza nuestra: Dios te salve.
+                 A ti llamamos los desterrados hijos de Eva; a ti suspiramos, gimiendo y llorando
+                 en este valle de lagrimas. Ea, pues, Señora abogada nuestra, vuelve a nosotros esos tus ojos misericordiosos
+                 y, despues de este  destierro, muestranos a Jesus, fruto bendito de tu vientre. Oh clemente Oh piadosa!Oh dulce Virgen Maria!
+                 Ruega por nosotros santa Madre de Dios, Para que seamos dignos de alcanzar las promesas de nuestro Senor Jesucrist. Amen.
+                  <br/> 
+                
+            </p>
+
+
         </Body>
     );
 }
