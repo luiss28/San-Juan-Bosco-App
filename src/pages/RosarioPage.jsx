@@ -3,6 +3,7 @@ import Misterio from '../components/Oraciones';
 import PadreNuestro from '../components/PadreNuestro';
 import AveMaria from '../components/AveMaria';
 import Gloria from '../components/Gloria';
+import Stepper, { Step } from '../components/Stepper';
 
 export default function RosarioPage() {
   return (
@@ -57,20 +58,35 @@ export default function RosarioPage() {
       </p>
       <hr/>
 
-      <h3>Primer Misterio:</h3>
-      <Misterio num={1}/>
-      <br/>
-      <h3>Segundo Misterio:</h3>
-      <Misterio num={2}/>
-      <br/>
-      <h3>Tercer Misterio:</h3>
-      <Misterio num={3}/>
-      <br/>
-      <h3>Cuarto Misterio:</h3>
-      <Misterio num={4}/>
-      <br/>
-      <h3>Quinto Misterio:</h3>
-      <Misterio num={5}/>
+      <Stepper
+        initialStep={1}
+        backButtonText="Anterior"
+        nextButtonText="Siguiente"
+        stepCircleContainerClassName="rosario-stepper-shell"
+        contentClassName="rosario-stepper-content"
+        footerClassName="rosario-stepper-footer"
+      >
+        <Step>
+          <h4>Primer Misterio:</h4>
+          <Misterio num={1} />
+        </Step>
+        <Step>
+          <h4>Segundo Misterio:</h4>
+          <Misterio num={2} />
+        </Step>
+        <Step>
+          <h4>Tercer Misterio:</h4>
+          <Misterio num={3} />
+        </Step>
+        <Step>
+          <h4>Cuarto Misterio:</h4>
+          <Misterio num={4} />
+        </Step>
+        <Step>
+          <h4>Quinto Misterio:</h4>
+          <Misterio num={5} />
+        </Step>
+      </Stepper>
       <hr/>
       
       <h3 style={{textAlign:"center"}}>Final:</h3>
