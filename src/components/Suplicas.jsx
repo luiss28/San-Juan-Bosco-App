@@ -13,9 +13,7 @@ export default function Suplica() {
             <b>10 Cuentas Pequenas</b>
             <CuentaPequena/>
             <br/>
-            <b>Gloria</b>
             <Gloria/>
-            <br/>
         </Body>
     )
 }

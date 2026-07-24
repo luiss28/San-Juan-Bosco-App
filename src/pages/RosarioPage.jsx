@@ -87,8 +87,8 @@ export default function RosarioPage() {
           <Misterio num={5} />
         </Step>
       </Stepper>
-      <hr/>
       
+      <hr/>
       <h3 style={{textAlign:"center"}}>Final:</h3>
       <h5 style={{textAlign:"center"}}>Salve</h5>
       <p style={{textAlign:"center"}}>
