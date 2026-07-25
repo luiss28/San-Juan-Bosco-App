@@ -11,6 +11,9 @@ export default function Sidebar() {
         <Nav.Link as={NavLink} to="/" end>Menu de Bienvenida</Nav.Link>
       </Nav.Item>
       <Nav.Item>
+        <Nav.Link as={NavLink} to="/nosotros" end>Quienes somos</Nav.Link>
+      </Nav.Item>
+      <Nav.Item>
         <Nav.Link as={NavLink} to="/rosario" end>Rezar el Rosario</Nav.Link>
       </Nav.Item>
       <Nav.Item>

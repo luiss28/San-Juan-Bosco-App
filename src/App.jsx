@@ -7,6 +7,7 @@ import RosarioPage from './pages/RosarioPage';
 import RosarioJuvenilPage from './pages/RosarioJuvenilPage';
 import DonBoscoPage from './pages/DonBoscoPage';
 import InterestFormPage from './pages/InterestFormPage';
+import AboutUsPage from './pages/AboutUsPage';
 import NotFoundPage from './pages/NotFoundPage';
 
 function App() {
@@ -18,6 +19,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element = {<WelcomePage />} />
+          <Route path="/nosotros" element = {<AboutUsPage />} />
           <Route path="/rosario" element = {<RosarioPage />} />
           <Route path="/rosariojuvenil" element = {<RosarioJuvenilPage />} />
           <Route path="/donbosco" element = {<DonBoscoPage />} />
