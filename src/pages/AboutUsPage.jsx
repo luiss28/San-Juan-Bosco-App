@@ -6,11 +6,30 @@ import Row from 'react-bootstrap/Row';
 export default function AboutUsPage() {
     return (
         <Body sidebar>
-            <img
-                src="/YG_Together.jpeg"
-                alt="YouTube here"
-                style={{ width: '100%', height: 'auto', objectFit: 'cover', borderRadius: '12px', display: 'block', margin: '0 auto 16px' }}
-            />
+            <div
+                style={{
+                    position: "relative",
+                    width: "100%",
+                    paddingBottom: "56.25%", // 16:9 aspect ratio
+                    marginBottom: "16px",
+                }}
+            >
+                <iframe
+                    src="https://www.youtube.com/embed/s3oypjUywhE?si=8b-3Oo86mdb5sCAx"
+                    title="Youth Group Video"
+                    style={{
+                        position: "absolute",
+                        top: 0,
+                        left: 0,
+                        width: "100%",
+                        height: "100%",
+                        border: 0,
+                        borderRadius: "12px",
+                    }}
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    allowFullScreen
+                />
+            </div>
 
             <h3>Conoce a los lideres</h3>
 

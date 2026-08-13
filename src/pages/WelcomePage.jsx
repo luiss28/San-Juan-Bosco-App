@@ -50,7 +50,7 @@ export default function WelcomePage() {
               el rosario juvenil
             </Card.Subtitle>
             <Card.Text>
-              Fundado por Mision: Haz Me Santo
+              Fundado por Mision Haz Me Santo
             </Card.Text>
             <Button className="bisque-btn" onClick={() => navigate("/rosariojuvenil")}>Reza ahora</Button>
           </div>
